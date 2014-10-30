@@ -42,7 +42,8 @@ class SaveTicketTest(TestCase):
                                      'ticketupdate_set-0-id': '',
                                      'ticketupdate_set-__prefix__-id': '',
                                      'ticketupdate_set-__prefix__-attachment': '',
-                                     })
+                                    },
+                                    secure=True)
         self.assertEqual(response.status_code,
                          302,
                          'Unexpected status code on add, got %s expected 302' %
