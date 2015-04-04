@@ -1,7 +1,7 @@
 Bugtracker
 ==========
 
-Bugtracker is a simple Django 1.6 admin-based app for tracking bugs.
+Bugtracker is a simple Django 1.8 admin-based app for tracking bugs.
 
 Features
 --------
@@ -26,5 +26,5 @@ Quick start
 Dependencies
 ------------
 
--  `Django 1.6.2 <https://pypi.python.org/pypi/Django/1.6.2>`__
+-  `Django 1.8 <https://pypi.python.org/pypi/Django/1.8>`__
 
