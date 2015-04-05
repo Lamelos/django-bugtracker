@@ -23,7 +23,7 @@ class CreateTicketTest(TestCase):
         self.assertEqual(ticket.title,
                          'Test Ticket',
                          'Unexpected ticket title, got "%s" expected "Test Ticket"' %
-                            (ticket.title))
+                         (ticket.title))
 
         ticket_update = TicketUpdate.objects.create(ticket=ticket,
                                                     title='Test Ticket Update',
@@ -34,4 +34,4 @@ class CreateTicketTest(TestCase):
         self.assertEqual(ticket_update.title,
                          'Test Ticket Update',
                          'Unexpected ticket update title, got "%s" expected "Test Ticket Update"' %
-                            (ticket.title))
+                         (ticket.title))

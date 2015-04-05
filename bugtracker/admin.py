@@ -25,7 +25,7 @@ class TicketAdmin(admin.ModelAdmin):
                        ('assigned_to',),
                        ('description',),
                        ('attachment'),
-                       )
+            )
         }),
     )
 
@@ -39,7 +39,6 @@ class TicketAdmin(admin.ModelAdmin):
             for instance in instances:
                 instance.updated_by = request.user
                 instance.save()
-#         else:
-#             formset.save()
+
 
 admin.site.register(Ticket, TicketAdmin)

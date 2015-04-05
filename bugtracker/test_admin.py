@@ -47,18 +47,18 @@ class SaveTicketTest(TestCase):
         self.assertEqual(response.status_code,
                          302,
                          'Unexpected status code on add, got %s expected 302' %
-                             (response.status_code))
+                         (response.status_code))
 
         ticket = Ticket.objects.get(title='Test Ticket')
         ticket_unicode = ticket.__unicode__()
         self.assertEqual(ticket_unicode,
                          'Test Ticket',
                          'Unexpected Ticket __unicode__, got %s expected "Test Ticket"' %
-                             (ticket_unicode))
+                         (ticket_unicode))
 
         ticket_update = TicketUpdate.objects.get(update_text='Test Updated')
         ticket_update_unicode = ticket_update.__unicode__()
         self.assertEqual(ticket_update_unicode,
                          'Test Ticket-update-1',
                          'Unexpected TicketUpdate __unicode__, got %s expected "Test Ticket-update-1"' %
-                             (ticket_update_unicode))
+                         (ticket_update_unicode))
